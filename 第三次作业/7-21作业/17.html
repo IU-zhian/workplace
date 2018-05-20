@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网页布局</title>
+	</head>
+	<style>
+		#kuangjia{
+			width:1500px;
+			height:1000px;
+		}
+		#head{
+			border:1px solid red;
+			width:100%;
+			height:300px;
+		}
+		#body{
+			border:1px solid red;
+			width:100%;
+			height:500px;
+		}
+		#footer{
+			border:1px solid red;
+			width:100%;
+			height:200px;
+		}
+		.side{
+			border:1px solid red;
+			width:498px;
+			height:500px;
+			float:left
+		}
+	</style>
+	<body>
+		<div id="kuangjia">
+			<div id="head">
+				head
+			</div>
+			<div id="body">
+				<div class="side">
+					left
+				</div>
+				<div class="side">
+					middle
+				</div>
+				<div class="side">
+					right
+				</div>
+			</div>
+			<div id="footer">
+				footer
+			</div>
+		</div>
+	</body>
+</html>

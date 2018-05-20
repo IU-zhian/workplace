@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单标签</title>
+	</head>
+	<body>
+		<form action="#" method="get">
+			隐藏名：<input type="hidden" /><br />
+			用户名：<input  type="text" name="username" value="张三"/><br />
+			密码：<input type="password" name="password" required="required"/><br  />
+			确认密码：<input type="password" name="repassword"/><br  />
+			性别：<input type="radio" name="sex" value="男" checked="checked"/>男
+			<input type="radio" name="sex" value="女"/>女<br />
+			<!--
+            	其中name=“” 内容是任意的，整个命令代表确定一些属性，即实现性别中只能勾选一个
+            	value是提交上去的值，checked是默认选项
+            	按钮是不需要给予name属性
+            	在籍贯中select是默认选项
+            	required是必填，如果不填，注册将不能提交
+            -->
+			爱好：<input type="checkbox" name="hobby" value="跑步"/>跑步
+			<input type="checkbox" name="hobby" value="打游戏"/>打游戏
+			<input type="checkbox" name="hobby" value="敲代码"/>敲代码<br />
+			头像：<input type="file" name="file"/><br  />
+			籍贯：<select name="province" >
+				<option>--请选择--</option>
+				<option value="天津">天津</option>
+				<option value="四川" selected="selected">四川</option>
+				<option value="江西">江西</option>
+			</select><br />
+			自我介绍：<textarea name="zwjs">
+				
+			</textarea><br />
+			提交按钮：<input  type="submit"/><br />
+			普通按钮：<input  type="submit" value="zhuce"/><br />
+			重置：<input type="reset"/>
+		</form>
+	</body>
+</html>

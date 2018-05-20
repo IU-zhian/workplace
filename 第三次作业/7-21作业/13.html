@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>盒子模型</title>
+	</head>
+	<style>
+		#kuangjia{
+			border:1px solid gray;
+			width:304px;
+			height:196px;
+			position: absolute;
+    		top: 50%;
+    		left:50%;
+    		margin-top: -140px;
+    		margin-left: -200px;
+		}
+		#head{
+			padding-left: 20px;
+			width:94%;
+			height:35px;
+			background-color: darkslategray;
+		}
+		#form{
+			width:260px;
+			height:100px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			margin-left: 20px;
+			text-indent: 2em;
+		}
+		#submit{
+			position: absolute;
+			left:67px;
+			top:137px;
+		}
+	</style>
+	<body>
+		<div id="kuangjia">
+			<div id="head">
+				<font size="5" color="aliceblue">会员登录</font>
+			</div>
+			<div id="form">
+				<form>
+					姓名：<input type="text"/><br />
+				</form>
+				<form>
+					邮箱：<input type="text"/><br />
+					联系电话：<input type="text"/><br />
+				</form>
+				<form id="submit">
+					<input type="submit" value="登录" />
+				</form>
+			</div>
+
+		</div>
+	</body>
+</html>
